@@ -1,0 +1,641 @@
+*{
+    font-family: 'Poppins';
+}
+
+@font-face {
+    font-family: 'Judul';
+    src: url(Font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'subjudul';
+    src: url(Font/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'biasa';
+    src: url(Font/Poppins-Regular.ttf);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar-brand img {
+    width: 20%;
+}
+
+.navbar-nav {
+    left: -50px;
+}
+
+.navbar-collapse .active {
+    border-color: #4a56e2;
+}
+
+.nav-link:hover {
+    color: blueviolet;
+}
+
+.form-control {
+    border-radius: 50px;
+}
+
+.btn-outline-success {
+    border-color: #4a56e2;
+    color: #4a56e2;
+    border-radius: 50px;
+}
+
+.btn-outline-success:hover{
+    background-color: #4a56e2;
+}
+
+.header-card {
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
+.header-overlay {
+    width: 50vw;
+    margin: 15vh 0vh 0vh 16vh;
+}
+
+.header-title {
+    color: #e5e7eb;
+    font-family: 'judul';
+    font-size: 3vw;
+    width: 70%;
+   
+}
+
+.header-text {
+    color: #e5e7eb;
+    font-family: 'subjudul';
+    font-size: 2vw;
+    cursor: pointer;
+
+}
+@media screen and (min-width: 1024px) {
+    .header-overlay {
+        width: 50vw;
+        margin: 30vh 20vh 30vh 20vh;
+    }
+    .header-title {
+        color: #e5e7eb;
+        font-family: 'judul';
+        font-size: 75px;
+        width: auto;
+    }
+    .header-text {
+        color: #e5e7eb;
+        font-family: 'subjudul';
+        padding-top: 2vh;
+        font-size: 1vw;
+}
+}
+
+.product {
+    width: 100vw;
+    height: 230vh;
+    margin-top: 15vh;
+    display: block;
+}
+
+.header-brand {
+    color: #303030;
+    font-family: 'judul';
+    font-size: 5vw;
+}
+
+.badge-head {
+    margin: 30px 0 50px 0;
+}
+
+.badge-brand {
+    background-color: #4a56e2;
+    border-radius: 25px;
+    padding: 10px 10px 10px 10px;
+    color: #e5e7eb;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+.product-row {
+    width: 90vw;
+    justify-self: center; /* Centers the grid within its container */
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns by default */
+    gap: 0px; /* s space between grid items */
+   
+}
+
+.product-card {
+    
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-img {   
+    border-radius: 20px;
+}
+
+.product-title {
+    font-family: 'judul';
+    font-size: 15px;
+    margin-bottom: -3px;
+    text-align: center;
+}
+
+.badge-product {
+    background-color: white;
+    border: 1px solid #6b7280;
+    color: #6b7280;
+    border-radius: 15px;
+    padding: 3px 7px;
+    font-size: 5px;
+    font-weight: bold;
+    
+}
+
+.price-product {
+    color: #4a56e2;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.price-product span {
+    color: #6b7280;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.features i, .features p {
+    margin-right: 3px;
+    font-size: 10px;
+    text-align: center;
+    display: inline;
+    
+}
+
+.btn-order {
+    background-color: #4a56e2;
+    color: white;
+    width: 11rem;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer; 
+    font-size: 2vw;
+    
+
+}
+
+.product-card:hover {
+    transform: scale(1.05); 
+}
+
+@media screen and (min-width: 1024px){
+    
+    .product {
+        width: 100vw;
+        height: 170vh;
+        margin-top: 25vh;
+    }
+
+    .header-brand {
+        color: #303030;
+        font-family: 'judul';
+        font-size: 30px;
+        margin-bottom: 50px;
+        
+    }
+
+    .badge-head {
+        margin: 30px 0 50px 0;
+    }
+
+
+    .badge-brand {
+        background-color: #4a56e2;
+        border-radius: 25px;
+        padding: 10px 10px 10px 10px;
+        color: #e5e7eb;
+        font-weight: 400;
+        cursor: pointer;
+        line-height: normal;
+        
+    }
+
+    .product-row {
+        grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns on desktop */
+        width: 75vw;
+         /* /* Adds space between grid items */
+    }
+
+    .product-card {
+        border-radius: 25px;
+        padding: 10px;
+        width: 250px;
+        height: 27rem;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-img {   
+        border-radius: 20px;
+    }
+
+    .product-title {
+        font-family: 'judul';
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .badge-product {
+        background-color: white;
+        border: 1px solid #6b7280;
+        color: #6b7280;
+        border-radius: 15px;
+        padding: 5px 10px;
+        font-size: 8px;
+        font-weight: bold;
+        
+    }
+
+    .price-product {
+        color: #4a56e2;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: left;
+        text-align: center;
+    }
+
+    .price-product span {
+        color: #6b7280;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .features i, .features p {
+        margin-right: 5px;
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .btn-order {
+        background-color: #4a56e2;
+        color: white;
+        width: 14rem;
+        border-radius: 15px;
+        padding: 10px 20px;
+        font-weight: bold;
+        cursor: pointer;  
+        font-size: large;
+    }
+
+    .product-card:hover {
+        transform: scale(1.05); 
+    }
+}
+
+
+.footer {
+    background-color: #303030;
+    height: 40vw;
+    align-content: center;
+}
+
+.row-footer {
+    position: relative;
+    display: flex;
+    margin-left: 60px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.logo-footer {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.logo-footer img {
+    height: 30px;   
+}
+
+.logo-footer h3 {
+    color: #e5e7eb;
+    font-family: 'judul';
+    font-size: 10px;
+    width: 10px;
+}
+
+.col-foot-brand {
+    margin: 40px 0px 0 0;
+}
+
+.col-foot-brand p {
+    color: #e5e7eb;
+    font-family: 'biasa';
+    font-size: 5px;
+    width: 140px;
+}
+
+.col-foot-link {
+    margin-top: 40px;
+    position: relative;
+    gap: 10px;
+    width: 14vw;
+
+}
+
+.col-foot-link h5 {
+    color: #e5e7eb;
+    display: flex;
+    font-family: 'subjudul';
+    font-size: 10px;
+}
+
+.list-link {
+    list-style: none;
+    padding-left: 0;
+    color: #e5e7eb;
+    font-family: 'biasa';
+    font-size: 1vw;
+}
+
+.col-foot-socmed {
+    margin: 40px 70px 0 0;
+    position: relative;
+}
+
+.col-foot-socmed h5 {
+    color: #e5e7eb;
+    font-family: 'subjudul';
+    font-size: 10px;
+}
+
+.col-foot-socmed i {
+    color: #e5e7eb;
+    font-size: 10px;
+}
+
+.col-foot-loc {
+    position: relative;
+    width: 330px;
+}
+
+.col-foot-loc h5 {
+    color: #e5e7eb;
+    font-family: 'subjudul';
+    font-size: 10px;
+}
+
+.col-foot-loc a {
+    color: #e5e7eb;
+    font-size: 13px;
+    padding-right: 10px;
+}
+
+.col-foot-loc p {
+    position: relative;
+    display: flex;
+    color: #e5e7eb;
+    font-size: 1vw;
+    width: 25vw;
+}
+
+.col-foot-mail {
+  position: relative;
+
+}
+
+.col-foot-mail h5 {
+    color: #e5e7eb;
+    font-family: 'subjudul';
+    font-size: 10px;
+}
+
+.col-foot-mail a {
+    color: #e5e7eb;
+    font-size: 13px;
+    padding-right: 10px;
+}
+
+.col-foot-mail p {
+    position: relative;
+    display: flex;
+    color: #e5e7eb;
+    font-size: 1vw;
+    width: 40%;
+}
+
+.col-foot-call {
+    position: relative;
+}
+
+.col-foot-call h5 {
+    color: #e5e7eb;
+    font-family: 'subjudul';
+    font-size: 10px;
+}
+
+.col-foot-call a {
+    color: #e5e7eb;
+    font-size: 13px;
+    padding-right: 10px;
+}
+
+.col-foot-call p {
+    position: relative;
+    display: flex;
+    color: #e5e7eb;
+    font-size: 1vw;
+}
+
+#copyright {
+    height: 2.5rem;
+    background-color: #4a56e2;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+#copyright {
+    color: #e5e7eb;
+    font-family: 'biasa';
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        background-color: #303030;
+        height: 70vh;
+        align-content: center;
+    }
+    .row-footer {
+        position: relative;
+        display: flex;
+        margin-left: 250px;
+        width: 100vw;
+        height: 50vh;
+    }
+    .logo-footer img {
+        height: 100px;   
+    }
+    .logo-footer img {
+        height: 100px;   
+    }
+    .logo-footer h3 {
+        color: #e5e7eb;
+        font-family: 'judul';
+        font-size: 35px;
+    }
+    .col-foot-brand p {
+        color: #e5e7eb;
+        font-family: 'biasa';
+        font-size: 14px;
+        width: auto;
+    }
+
+        
+    .col-foot-link {
+        margin: 40px 70px 0 0;
+        gap: 10px;
+        width: auto;
+        bottom: 0;
+        left: 0;
+
+    }
+
+    .col-foot-link h5 {
+        color: #e5e7eb;
+        font-family: 'subjudul';
+        font-size: 25px;
+    }
+
+    .list-link {
+        list-style: none;
+        padding-left: 0;
+        color: #e5e7eb;
+        font-family: 'biasa';
+    }
+
+    .col-foot-socmed {
+        margin: 40px 70px 0 0;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .col-foot-socmed h5 {
+        color: #e5e7eb;
+        font-family: 'subjudul';
+        padding-bottom: 7px;
+        font-size: 25px;
+    }
+
+    .col-foot-socmed i {
+        color: #e5e7eb;
+        font-size: 30px;
+    }
+
+    .col-foot-loc {
+        margin: 40px 20px 40px 20px;
+        width: 330px;
+        position: relative;
+        bottom: 0;
+    }
+
+    .col-foot-loc h5 {
+        color: #e5e7eb;
+        font-family: 'subjudul';
+        font-size: 25px;
+    }
+
+    .col-foot-loc a {
+        color: #e5e7eb;
+        font-size: 35px;
+        padding-right: 10px;
+    }
+
+    .col-foot-loc p {
+        position: relative;
+        display: flex;
+        color: #e5e7eb;
+        width: 100%;
+    }
+
+    .col-foot-mail {
+        margin: 40px 20px 40px 20px;
+        width: 300px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .col-foot-mail h5 {
+        color: #e5e7eb;
+        font-family: 'subjudul';
+        font-size: 25px;
+    }
+
+    .col-foot-mail a {
+        color: #e5e7eb;
+        font-size: 35px;
+        padding-right: 10px;
+    }
+
+    .col-foot-mail p {
+        position: relative;
+        display: flex;
+        color: #e5e7eb;
+    }
+
+    .col-foot-call {
+        margin: 40px 20px 40px 20px;
+        width: 260px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .col-foot-call h5 {
+        color: #e5e7eb;
+        font-family: 'subjudul';
+        font-size: 25px;
+    }
+
+    .col-foot-call a {
+        color: #e5e7eb;
+        font-size: 35px;
+        padding-right: 10px;
+    }
+
+    .col-foot-call p {
+        position: relative;
+        display: flex;
+        color: #e5e7eb;
+    }
+
+    #copyright {
+        height: 2.5rem;
+        background-color: #4a56e2;
+        text-align: center;
+        padding: 10px 0 10px 0;
+    }
+
+    #copyright {
+        color: #e5e7eb;
+        font-family: 'biasa';
+        font-size: 12px;
+    }
+
+}

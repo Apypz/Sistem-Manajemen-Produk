@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Gamify - Homepage</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#135bec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+            },
+            fontFamily: {
+              display: ["Spline Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark font-display">
+    <div
+      class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <div
+          class="px-4 sm:px-8 md:px-20 lg:px-40 flex flex-1 justify-center py-5"
+        >
+          <div
+            class="layout-content-container flex flex-col max-w-[960px] flex-1 gap-12 md:gap-20"
+          >
+            <!-- TopNavBar -->
+            <header
+              class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 dark:border-b-[#232f48] px-6 sm:px-10 py-3"
+            >
+              <div class="flex items-center gap-4 text-white">
+                <div class="size-5 text-primary">
+                  <svg
+                    fill="none"
+                    viewbox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 6H42L36 24L42 42H6L12 24L6 6Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <h2
+                  class="text-black dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]"
+                >
+                  Gamify
+                </h2>
+              </div>
+              <div class="hidden md:flex flex-1 justify-end gap-8">
+                <div class="flex items-center gap-9">
+                  <a
+                    class="text-black dark:text-white text-sm font-medium leading-normal"
+                    href="#"
+                    >How It Works</a
+                  >
+                  <a
+                    class="text-black dark:text-white text-sm font-medium leading-normal"
+                    href="#"
+                    >Features</a
+                  >
+                  <a
+                    class="text-black dark:text-white text-sm font-medium leading-normal"
+                    href="#"
+                    >Pricing</a
+                  >
+                </div>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-primary/20 dark:bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Log In</span>
+                </button>
+              </div>
+              <div class="md:hidden text-black dark:text-white">
+                <span class="material-symbols-outlined">menu</span>
+              </div>
+            </header>
+            <!-- HeroSection -->
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10 text-center sm:text-left sm:items-start"
+                  data-alt="Abstract vibrant gradient with blue and purple hues"
+                  style="
+                    background-image: linear-gradient(
+                        rgba(0, 0, 0, 0.1) 0%,
+                        rgba(0, 0, 0, 0.4) 100%
+                      ),
+                      url('https://lh3.googleusercontent.com/aida-public/AB6AXuD3ZsfnGP1jc1YUlBh6Jg4uo8Zvq5rfz_ho9n29RlvzR7TlK92wQvZHPJx11YaIpaaCQgJNI1VJc0e34_-tR9EP1DecrrSHK66eeJ--xwXhJA3ptdCuiXtg6Ip7l3Osgpgw8z6i6b3O7gZleZN32OSdWTUIJ41aEhOpmqresowoNhzaND8jm28VLqOO9QThyJ9SdLS5HE4wElJoMfr80AFCGPo4uoiOlDz0WnWKqfYt4O51VmNPMx3yof9qVig7RI1BJbOKd0QxuHg');
+                  "
+                >
+                  <div
+                    class="flex flex-col gap-2 w-full items-center sm:items-start"
+                  >
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-md"
+                    >
+                      Turn Goals into Achievements
+                    </h1>
+                    <h2
+                      class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal max-w-md"
+                    >
+                      Earn badges for completing tasks and celebrate your
+                      success.
+                    </h2>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                  >
+                    <span class="truncate">Get Started for Free</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- FeatureSection -->
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="text-black dark:text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                >
+                  Why Gamify?
+                </h1>
+                <p
+                  class="text-gray-600 dark:text-white/70 text-base font-normal leading-normal max-w-[720px]"
+                >
+                  Unlock your potential by turning everyday tasks into exciting
+                  challenges and rewarding milestones.
+                </p>
+              </div>
+              <div
+                class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4"
+              >
+                <div
+                  class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-[#324467] bg-white dark:bg-[#192233] p-4 flex-col"
+                >
+                  <div class="text-primary">
+                    <span class="material-symbols-outlined">spark</span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2
+                      class="text-black dark:text-white text-base font-bold leading-tight"
+                    >
+                      Boost Engagement
+                    </h2>
+                    <p
+                      class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal"
+                    >
+                      Keep your team motivated with fun and interactive goals.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-[#324467] bg-white dark:bg-[#192233] p-4 flex-col"
+                >
+                  <div class="text-primary">
+                    <span class="material-symbols-outlined">trending_up</span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2
+                      class="text-black dark:text-white text-base font-bold leading-tight"
+                    >
+                      Track Progress
+                    </h2>
+                    <p
+                      class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal"
+                    >
+                      Visualize your journey and see how far you've come.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-[#324467] bg-white dark:bg-[#192233] p-4 flex-col"
+                >
+                  <div class="text-primary">
+                    <span class="material-symbols-outlined">military_tech</span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2
+                      class="text-black dark:text-white text-base font-bold leading-tight"
+                    >
+                      Reward Achievement
+                    </h2>
+                    <p
+                      class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal"
+                    >
+                      Celebrate every milestone with unique, collectible badges.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Badge Showcase Section -->
+            <div class="flex flex-col gap-4">
+              <h2
+                class="text-black dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4"
+              >
+                Showcase Your Collection
+              </h2>
+              <p
+                class="text-gray-600 dark:text-white/70 text-base font-normal leading-normal px-4"
+              >
+                A collection of visually diverse badges with imaginative names
+                to inspire users.
+              </p>
+              <div
+                class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4"
+              >
+                <div class="flex flex-col items-center gap-2">
+                  <img
+                    alt="Pioneer Badge"
+                    class="w-24 h-24 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI382Aa3qKQTuKeZMliywheBumxeOY96UcOFuS2G73b3atptxZz-3YiznyaYlK6vVuElHqMTTL2m7h8TMEamFcyKBJGFKBSpox-6OfA2qd5t-gTfmjdZbiD3Hx8pMaxiSdFJg8poORap1OzPic5neFy4TEfd0DV7TGAkzC0CeCbzp7m4q6qSW1ew4zW5QcuHJ-JupEGX8lA5B_IZeH10fzW5-xYskdK9ms-rz-bqcBXWaeO_DUyk1KpNh3Eebg3jdzsGhLmoJqmf4"
+                  />
+                  <span class="text-black dark:text-white text-sm font-medium"
+                    >Pioneer</span
+                  >
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <img
+                    alt="Mastermind Badge"
+                    class="w-24 h-24 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz_kGs3SuxlgBTF3zR0odFnT3ipfdyy4fwHVFy5Z0rHR1rev_Z9BQ-KO9aHB5OgmsWCZ_V0ODccMVUrc0IIVQh9wnrhiBJSlsibrxdo18QbkHAk7OyzuOVEjCoutiYqrlrxbIg4mJ5KRXRmIIHNS6twzJ6LTuBRv_fyXacohpuoe9k9kwXtIxCk9u3YNxyAEq2tUdpZ_kf6VYHCFKN-UN9YHJVpuUzE747l-HV7v5xreAHI2F6_5hCwssJ_jvMM8fPC11rAQmnDuQ"
+                  />
+                  <span class="text-black dark:text-white text-sm font-medium"
+                    >Mastermind</span
+                  >
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <img
+                    alt="Innovator Badge"
+                    class="w-24 h-24 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS8JSNm_K33ef-hvjaCF0RT2yKbeRWOp8S1zKtpb2zVXOhT_Vn0DTCqoxsZsDVWJ-hPBLr9TAaZ6V9DsrLQD_9LxDAkoxdfuF9_FBZc6fxKTln0QHepKL_aHKEPHXpy0k36CyCLZpWn0d6KswbHsbF1R1MhexXq74SlPns3F040JnQ0sdkW-tcTAC9y2T_2-uzu_VKx4ESb1zS6323tUrHwRInVNrMSBaMJ0eIRLtSB-7se4LSyEgx9PWe86GZm2TCMC2AnikNzdw"
+                  />
+                  <span class="text-black dark:text-white text-sm font-medium"
+                    >Innovator</span
+                  >
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <img
+                    alt="Voyager Badge"
+                    class="w-24 h-24 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBR0aqtpRzsxzTBpsXKJMY9oKm872-a2QSttmeREmze2u4ZKmOt5Rs0nYSCu_PmOXuPnWj7Ni1v9OYZwyiG9vQRK9BO_jqS7j_MJEQmB869ygijfLNANNLEl5ZGn-drunY_K58BFYQ61EqEJes5rwI0qsmG7pkZDGEM1GzvHxAgERlLm-nALR7FOWIppzMshoyOMc4hgBgH2dZ8-49rQy21mQLDHK1XSfjqE2wzNCtSq4exm53QeAyDQifeZiQISNiUr6RhRYUcHpI"
+                  />
+                  <span class="text-black dark:text-white text-sm font-medium"
+                    >Voyager</span
+                  >
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <img
+                    alt="Catalyst Badge"
+                    class="w-24 h-24 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8NNsNVt0HxESRR2yUWwV8JMF6S3tm6A-V2-udQunuLL79ERmOYq0XnKEDoyIPxZHEAb04KdEVQkdjXzbSqNhtYB53hiAi-fve2ZmGnLsTOJ8q5Z3vy9xvB3XbKjrczhqDO6CvmQeq-cbQa_0HF93iUYYpIhy1L2fDkzarWlXHivWFPxZhzg-Me7JJx2ll4whDaRhIlARsQA1Zl5Kp1JFS-yvfVo6zHx0J6lfqAJtHW5zUIZCcFVEBinv3vYAdZ88qpyEkqYrLRNM"
+                  />
+                  <span class="text-black dark:text-white text-sm font-medium"
+                    >Catalyst</span
+                  >
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <img
+                    alt="Guardian Badge"
+                    class="w-24 h-24 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZiqOd78GvWEINQy0PTwC_MAsyh830QWIkMFuMRHYEVGdNtBpKUfZxgBQxTk2YELD0_b94min6kqhZtOmO0Jiv8w1zcJedI6gRrSDdrQET7A4SMHK12qkCGVG5A8UNvtx3mOq9smJ4zVncXYzef4FuPiIYWmKpvvtwH93wGI-GLvsSrvKBhLZ8ieGzlWXZZWn81MYT_kvo78L05jzeMi_panziE_uHv005tvU6JFP394ktpNzZnCBHnm0vSqHiDXD5BCiLU5LXyZM"
+                  />
+                  <span class="text-black dark:text-white text-sm font-medium"
+                    >Guardian</span
+                  >
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <img
+                    alt="Oracle Badge"
+                    class="w-24 h-24 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAne5ECW33sbgRR7-mV36EWJLZFhXnl52jJnBWd8FBRxQDjz0VzAvn0ioUtW_4Zz6e5hXN7lxhEm17xfE15FXtbYh2hzNGSateQsDpyGf3usIw-7XppBgnzFb1EAfKidr9STGWFOyxjmFG5oxb3WZpb4rmuHNqqQ-fCB2RMixJRESxI4NPPHDx5tXXJbzzQGlpJY-b2TXT68fE_AGBA4mtr0QHXQhnDeYs9-naDqAS5-cQdoNmrdxpp5aBsbQ9LxaS1HgomHUwuWhQ"
+                  />
+                  <span class="text-black dark:text-white text-sm font-medium"
+                    >Oracle</span
+                  >
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <img
+                    alt="Trailblazer Badge"
+                    class="w-24 h-24 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTfMicYCO4pQeSfen5BbD_jqEVTl1WjLiX8oWwliiiyay-B3cBidwWFwaUckfzgJ1H9s2vhMRFY4H5zs2hjOKFAcUEzQMBkKNYw6wsLHkHyJEaZYVbEnUXkZHX48FZdPpnJymdry4KGDA2dfGesQq43zFBgDnfLgbShzLXysSRCscRsKmps3BHW9g625f8Ybg3Cl5rkwaDmHoaxJgXpi45fUqiMbMWVleImvnNBQCC5eeG2l1yvgse_q54Nmm0hSYwWSwXCJd6Hgo"
+                  />
+                  <span class="text-black dark:text-white text-sm font-medium"
+                    >Trailblazer</span
+                  >
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <img
+                    alt="Nexus Badge"
+                    class="w-24 h-24 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAxZPJKAgbaipUZZs1zkF8aOf28OYvqD_xTASmrZAMXpHocX9QxqzGgsXT28IGM_i-R8WDRvyLZ5GnNVErgTfcAMLpUL93DzLjQUHCd1a-gVIIUoM6wCjitaOzQc1Knv9nnZEbooW6pc96a0VyEZJ5A8e9l6C_ZCY2uwg5IkWjuL5gCkVL7CvTiRckVhtMu62cmf8qhJ2L_kLQ49LbAlLIDDJQ6EOjLaglcv4DrJmDTqilsWRMVY-qLLXcEvWRBIeQSDnimj2TmNk"
+                  />
+                  <span class="text-black dark:text-white text-sm font-medium"
+                    >Nexus</span
+                  >
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <img
+                    alt="Zenith Badge"
+                    class="w-24 h-24 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDloNYzIIWIpuGrnUeaZ1B6RD2JRJ3nZM6zL1j0-Huy7pb3YKd9i7lA09xIMDdw-lpVnNIMbZl6CT8eW-NNfDvrQ3Nvnk0FBshHdqQWalkKgOZ6j407f71BCC6cUCnqZMEPjkmP47xGZXZX7swYAXtd3-YBLqj46LO7vGir5Ew0FNNt7U13cXsYpcw5nDcFYW3M7yPpS1NMVv6CBApAzlGOiNa1T9PwWSBjJVuxjThFsCf9BTsIfLSc6mTZ5vRb1RpVkAcLyUmSvpA"
+                  />
+                  <span class="text-black dark:text-white text-sm font-medium"
+                    >Zenith</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Final CTA Section -->
+            <div
+              class="flex flex-col items-center justify-center gap-6 rounded-lg bg-primary/10 dark:bg-primary/20 p-8 text-center"
+            >
+              <h2
+                class="text-black dark:text-white text-2xl md:text-3xl font-bold leading-tight tracking-[-0.015em]"
+              >
+                Ready to Gamify Your Success?
+              </h2>
+              <p
+                class="text-gray-600 dark:text-white/70 text-base font-normal leading-normal max-w-md"
+              >
+                Start your journey today and transform your tasks into exciting
+                achievements. Join now and begin collecting your badges!
+              </p>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Start Your Journey Today</span>
+              </button>
+            </div>
+            <!-- Footer -->
+            <footer
+              class="flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-gray-200 dark:border-white/10 pt-8 pb-4 px-4 text-sm"
+            >
+              <div
+                class="flex items-center gap-2 text-gray-500 dark:text-gray-400"
+              >
+                <div class="size-4 text-primary">
+                  <svg
+                    fill="none"
+                    viewbox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 6H42L36 24L42 42H6L12 24L6 6Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <span>© 2024 Gamify. All rights reserved.</span>
+              </div>
+              <div
+                class="flex items-center gap-6 text-gray-500 dark:text-gray-400"
+              >
+                <a class="hover:text-primary" href="#">Terms of Service</a>
+                <a class="hover:text-primary" href="#">Privacy Policy</a>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

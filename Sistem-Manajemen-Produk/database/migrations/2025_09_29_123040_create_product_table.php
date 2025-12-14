@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('category');
             $table->string('name');
             $table->string('photo')->nullable();
+            $table->integer('stok');
             $table->decimal('price',10,2);
             $table->timestamps();
         });

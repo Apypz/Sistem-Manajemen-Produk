@@ -1055,6 +1055,7 @@
         },
         {
             "name": "laravel/framework",
+<<<<<<< HEAD
             "version": "v12.31.1",
             "source": {
                 "type": "git",
@@ -1065,6 +1066,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/281b711710c245dd8275d73132e92635be3094df",
                 "reference": "281b711710c245dd8275d73132e92635be3094df",
+=======
+            "version": "v12.32.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "77b2740391cd2a825ba59d6fada45e9b8b9bcc5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/77b2740391cd2a825ba59d6fada45e9b8b9bcc5a",
+                "reference": "77b2740391cd2a825ba59d6fada45e9b8b9bcc5a",
+>>>>>>> origin/master
                 "shasum": ""
             },
             "require": {
@@ -1092,7 +1105,10 @@
                 "monolog/monolog": "^3.0",
                 "nesbot/carbon": "^3.8.4",
                 "nunomaduro/termwind": "^2.0",
+<<<<<<< HEAD
                 "phiki/phiki": "^2.0.0",
+=======
+>>>>>>> origin/master
                 "php": "^8.2",
                 "psr/container": "^1.1.1|^2.0.1",
                 "psr/log": "^1.0|^2.0|^3.0",
@@ -1271,7 +1287,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
+<<<<<<< HEAD
             "time": "2025-09-23T15:33:04+00:00"
+=======
+            "time": "2025-09-30T17:39:22+00:00"
+>>>>>>> origin/master
         },
         {
             "name": "laravel/prompts",
@@ -2515,6 +2535,7 @@
             "time": "2025-05-08T08:14:37+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "phiki/phiki",
             "version": "v2.0.4",
             "source": {
@@ -2586,6 +2607,8 @@
             "time": "2025-09-20T17:21:02+00:00"
         },
         {
+=======
+>>>>>>> origin/master
             "name": "phpoption/phpoption",
             "version": "1.9.4",
             "source": {

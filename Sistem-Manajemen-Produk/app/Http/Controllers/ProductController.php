@@ -9,9 +9,13 @@ use Illuminate\Support\Facades\Storage;
 class ProductController extends Controller
 {
     private $categories = ['Expresso', 'Arabika', 'Robusta'];
-    public function index()
+    public function index(Request $request)
     {
-        $products = Product::latest()->paginate(10);
+        $search = $request->get('search');
+        $products = Product::when($search, function ($query) use ($search) {
+            return $query->where('name', 'like', '%' . $search . '%')
+                         ->orWhere('category', 'like', '%' . $search . '%');
+        })->orderBy('id')->paginate(10);
         return view('products.index', compact('products'))->with('categories', $this->categories);
     }
 
@@ -32,6 +36,7 @@ class ProductController extends Controller
             'name'=> 'required|string|max:225',
             'category' => 'required|string',
             'price' => 'required|numeric|min:0',
+            'stok' => 'required|numeric|min:0',
             'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
